@@ -1,7 +1,7 @@
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HboHomePage extends BaseCode {
+public class EbayHomePage extends BaseCode {
 
     @FindBy(xpath="//a[@title='Sign In']")
     private WebElement signInTab;

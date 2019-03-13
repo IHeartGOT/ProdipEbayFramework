@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>General</module>
-        <module>Disney</module>
+        <module>Ebay</module>
     </modules>
 
     <dependencyManagement>

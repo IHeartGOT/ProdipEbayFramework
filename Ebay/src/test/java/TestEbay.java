@@ -3,21 +3,21 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TestHbo  extends BaseCode{
+public class TestEbay extends BaseCode{
 
-    String homepageUrl = "http://www.hbo.com";
-    HboHomePage homePage;
+    String homepageUrl = "http://www.ebay.com";
+    EbayHomePage homePage;
 
 
     @BeforeClass
     public void initialize() {
         this.driver.navigate().to(this.homepageUrl);
-        this.homePage = PageFactory.initElements(this.driver, HboHomePage.class);
+        this.homePage = PageFactory.initElements(this.driver, EbayHomePage.class);
     }
 
     @Test
     public void testUserCanNavigateToHomePage() {
-        String homepageTitle = "HBO: Home to Groundbreaking Series, Movies, Comedies & Documentaries";
+        String homepageTitle = "Electronics, Cars, Fashion, Collectibles, Coupons and More | eBay";
         Assert.assertEquals(this.driver.getTitle(), homepageTitle);
     }
 
