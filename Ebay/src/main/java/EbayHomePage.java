@@ -18,5 +18,5 @@ public class EbayHomePage extends BaseCode {
     @FindBy(linkText = "Sell")
     private WebElement transactions;
 
-//
+
 }
