@@ -18,5 +18,11 @@ public class EbayHomePage extends BaseCode {
     @FindBy(linkText = "Sell")
     private WebElement transactions;
 
+    public void clickOnSignInTab() {
+        this.clickOnSignInTab();
+    }
 
+    public void clickOnContactUsTab() {
+        this.clickOnContactUsTab();
+    }
 }
