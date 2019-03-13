@@ -21,14 +21,15 @@ public class TestEbay extends BaseCode{
         Assert.assertEquals(this.driver.getTitle(), homepageTitle);
     }
 
-    /*@Test
+    @Test
     public void testUserCanNavigateToTheSignInPage() {
-        this.homePage.;
+        EbayHomePage homePage = PageFactory.initElements(this.driver, EbayHomePage.class);
+        homePage.clickOnSignInTab();
         String signInPageUrl =
-                "http://www.hbo.com";
+                "https://my.ebay.com/ws/eBayISAPI.dll?MyEbay&amp;gbh=1\" _sp=\"m570.l2919\" class=\"gh-eb-li-a\"> My eBay";
         Assert.assertEquals(this.driver.getCurrentUrl(), signInPageUrl);
     }
-*/
+
    /* @Test
     public void testUserCanSearchForDresses() {
         this.homePage.searchFor("dresses");
