@@ -3,17 +3,20 @@ import org.openqa.selenium.support.FindBy;
 
 public class EbayHomePage extends BaseCode {
 
-    @FindBy(xpath="//a[@title='Sign In']")
-    private WebElement signInTab;
+    @FindBy(id="id=gh-logo")
+    private WebElement mainLogo;
 
-    @FindBy(name = "search")
-    private WebElement contactUsTab;
+    @FindBy(id="gh-ac")
+    private WebElement search;
 
-    @FindBy(id = "search_query_top")
-    private WebElement searchBox;
+    @FindBy(id = "id=gh-btn")
+    private WebElement motorList;
 
-    @FindBy(name = "submit_search")
-    private WebElement searchButton;
+    @FindBy(linkText = "My eBay")
+    private WebElement personalAccount;
 
-//    @FindBy(xpath = "//a[@title='Women']")
+    @FindBy(linkText = "Sell")
+    private WebElement transactions;
+
+//
 }
